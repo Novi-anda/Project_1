@@ -217,7 +217,7 @@ def subscribe_command1():
         sleep(.5)
         break
 def subscribe_command2():
-    print("Sending command to device")
+    print("Temperature:")
     client_id = 'projects/{}/locations/{}/registries/{}/devices/{}'.format(PROJECT_ID, REGION_ID, REGISTRY_ID, DEVICE_ID)
     #ukur = f"/devices/{DEVICE_ID}/commands/#"
     command = 'Baca Suhu'
@@ -229,7 +229,7 @@ def subscribe_command2():
         sleep(3)
     publish(client, temp)
 def subscribe_command3():
-    print("Sending command to device")
+    print("Humidity:")
     client_id = 'projects/{}/locations/{}/registries/{}/devices/{}'.format(PROJECT_ID, REGION_ID, REGISTRY_ID, DEVICE_ID)
     #ukur = f"/devices/{DEVICE_ID}/commands/#"
     command = 'Baca Kelembaban'
